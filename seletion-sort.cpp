@@ -27,19 +27,14 @@ void dados(int indice, int valor){
 }
 //faz a ordenacao com base no numero 
 void ordenar(){
- for(int i = 0; i <dados.tamanho - 1; 1++){
- int indiceMenor = i; //assume que é o menor
-
- //procura os numeros menores com base no menor numero anterior
- for(int j = i+1; j<dados.tamanho; j++){
- if(dados.vetor[j]<dados.vetor[indiceMenor])
-  indiceMenor = j;
-   }
- }
- if(indiceMenor !=i){
-  int temporario = dados.vetor[i];
-  dados.vetor[i] = dados.vetor[indiceMenor;
-  dados.vetor[indicceMenor] =  temporario;
+  int indiceMenor = 0; //assume que é o menor
+  for(int i = 0; i < dados.tamanho; i++){ //procura os numeros menores com base no menor numero anterior
+    if(dados.vetor[i] <= dados.vetor[indiceMenor]){ // se entrar aqui, achou um menor
+      int tmp = dados.vetor[indiceMenor];           //Troca de posicao com o menor
+      dados.vetor[indiceMenor] = dados.vetor[i];
+      dados.vetor[i] = tmp;
+      indiceMenor = i;
     }
- }
+  }
 }
+
