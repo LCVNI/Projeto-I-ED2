@@ -14,4 +14,7 @@
 
 2-Cria csv com base no que foi coletado
 
-    a) Função: gerarDados()        
+    a) Função: gerarDados()
+
+# Se der tempo e for conveniente:
+ - Script python que pega os csv gerados e cria gráficos
