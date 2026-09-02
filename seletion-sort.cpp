@@ -1,5 +1,5 @@
-#ifndef SELECTION-SORT_H
-#define SELECTION-SORT_H
+#ifndef SELETION-SORT_H
+#define SELETION-SORT_H
 
 #include "corpo.cpp"
 #include <iostream>
